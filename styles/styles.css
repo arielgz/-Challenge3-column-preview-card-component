@@ -65,6 +65,7 @@ p{
 .btn-learnSedans, .btn-learnSuvs, .btn-learnLuxu {
     width: 147px;
     height: 48px;
+    border-radius: 20px;
     border: none;
     background-color: var(--Very-light-gray);
     color: var(--Brightorange);
