@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Very-light-gray);
+}
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+
+
+ --Transparent-white : hsla(0, 0%, 100%, 0.75);/*  (paragraphs) */
+ --Very-light-gray : hsl(0, 0%, 95%); /* (background, headings, buttons)*/
+}
+
+.card-container {
+    width: 919px;
+    height: 500px;
+    display: flex;
+    margin: 70px auto;
+}
+
+.card-content {
+    background-color: var(--Brightorange);
+    border-bottom-left-radius:10px ;
+    border-top-left-radius: 10px
+    
+}
+.card-contentSuv {
+    background-color: var(--Dark-cyan);
+}
+.card-contentLuxu {
+    background-color: var(--Verydarkcyan);
+    border-bottom-right-radius:10px ;
+    border-top-right-radius: 10px
+}
+
+h2{
+    color: var( --Very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin: 25px 0 25px 40px;
+
+}
+p{
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 25px 45px 60px 40px;
+    line-height: 27px;
+   
+
+   
+}
+.btn-learnSedans, .btn-learnSuvs, .btn-learnLuxu {
+    width: 147px;
+    height: 48px;
+    border: none;
+    background-color: var(--Very-light-gray);
+    color: var(--Brightorange);
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 25px 45px 60px 40px;
+
+}
+.btn-learnSuvs {
+    color: var(--Dark-cyan);
+}
+.btn-learnLuxu {
+    color: var(--Verydarkcyan);
+}
+
+.icon-card {
+   margin: 50px 0 25px 40px;
+}
+.icon-card img {
+    width: 50px;
+    height: auto;
+    
+}
+
+
+.btn-learnSedans:hover {
+    cursor: pointer;
+    background-color: var(--Brightorange);
+    border: 1px solid var(--Very-light-gray);
+    color: var(--Very-light-gray);
+}
+.btn-learnSuvs:hover{
+    cursor: pointer;
+    background-color: var(--Dark-cyan);
+    border: 1px solid var(--Very-light-gray);
+    color: var(--Very-light-gray);
+}
+.btn-learnLuxu:hover {
+    cursor: pointer;
+    background-color: var(--Verydarkcyan);
+    border: 1px solid var(--Very-light-gray);
+    color: var(--Very-light-gray);
+
+}
+
+
+
+@media  screen and (max-width: 375px) {
+    .card-container {
+        width: 375px;
+        height: 1501px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+       
+    }
+    .card-content{
+        width: 326px;
+        height: 440px;
+        border-top-right-radius:10px ;
+        border-top-left-radius:10px ;
+      
+        
+        
+    }
+    .card-contentSuv {
+        width: 326px;
+        height: 440px;
+        
+    }
+    .card-contentLuxu {
+        width: 326px;
+        height: 440px;
+        border-bottom-right-radius:10px ;
+        border-bottom-left-radius:10px ;
+       
+
+    }
+    p {
+       margin-bottom: 5px;
+    }
+    
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
